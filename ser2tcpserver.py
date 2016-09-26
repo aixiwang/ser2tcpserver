@@ -37,11 +37,10 @@ class Ser2TcpClient():
         
 
 
-VERSION_STR = "ser2tcp v1.0.0"
+VERSION_STR = "ser2tcpserver v1.0.0"
 
 DESCRIPTION_STR = VERSION_STR + """
-(c) 2016 by pavel.revak@gmail.com
-https://github.com/pavelrevak/ser2tcp
+(c) 2016 by aixi.wang@hotmail.com
 """
 
 def main():
@@ -62,9 +61,6 @@ def main():
         'server_port', type=int,
         help="server port")
         
-    #parser.add_argument(
-    #    'flags', nargs='*', choices=['NONE', 'EVEN', 'ODD', 'ONE', 'TWO'],
-    #    help="Serial parameters: parity: [NONE|EVEN|ODD], stop bits: [ONE|TWO], default: NONE ONE")
     args = parser.parse_args()
 
 
