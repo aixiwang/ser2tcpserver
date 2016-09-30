@@ -75,6 +75,11 @@ def main():
 
         except:
             print 'wait 5 sec...'
+            try:
+                ser2tcp._serial.close()
+                ser2tcp._sock.close()
+            except:
+                pass
             time.sleep(5)
         
 
